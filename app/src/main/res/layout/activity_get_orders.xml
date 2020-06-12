@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.GetOrders">
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/uitbgetorders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/ToolbarColoredBackArrow"
+        app:titleTextColor="@color/white"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/uirvgetorders"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/uitbgetorders"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/uilinemptygetorders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@+id/uirvgetorders"
+        app:layout_constraintEnd_toEndOf="@+id/uirvgetorders"
+        app:layout_constraintTop_toTopOf="@+id/uirvgetorders"
+        app:layout_constraintBottom_toBottomOf="@+id/uirvgetorders"
+        >
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/ic_empty_cart"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No Records Found"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

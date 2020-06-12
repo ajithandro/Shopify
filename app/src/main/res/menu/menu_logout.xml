@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item  android:id="@+id/logout"
+        android:title="logout"
+        app:showAsAction="always"
+        android:iconTint="#FFFFFF"
+        android:icon="@drawable/ic_baseline_power_settings_new_24"/>
+
+
+
+</menu>

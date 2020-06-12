@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ListNshop</string>
+    <string name="appshopify">Shopify</string>
+    <string name="easy_shopping">easy shopping...</string>
+    <string name="login_as_user">Login as User</string>
+    <string name="login_as_shop_owner">Login as Shop owner</string>
+    <string name="min">-</string>
+    <string name="max">+</string>
+</resources>
